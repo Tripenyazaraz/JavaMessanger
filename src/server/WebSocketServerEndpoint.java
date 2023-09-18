@@ -5,7 +5,7 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-@ServerEndpoint(value = "/demoApp")
+@ServerEndpoint(value = "/server")
 public class WebSocketServerEndpoint {
     static Logger logger = Logger.getLogger(WebSocketServerEndpoint.class.getName());
 

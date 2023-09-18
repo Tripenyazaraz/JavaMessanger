@@ -1,12 +1,14 @@
 package client.ui;
 
 import javax.swing.*;
+import java.awt.*;
 
-public class mainForm extends JFrame {
+public class ClientForm extends JFrame {
     private JPanel rootPanel;
     private JButton hewwoButton;
 
-    public mainForm() {
+    public ClientForm() {
+        rootPanel.setMinimumSize(new Dimension(400, 400));
         setContentPane(rootPanel);
         setVisible(true);
 
@@ -14,6 +16,7 @@ public class mainForm extends JFrame {
     }
 
     public static void main(String[] args) {
-        new mainForm();
+        ClientForm form = new ClientForm();
+        form.setMinimumSize(new Dimension(400, 400));
     }
 }

@@ -21,7 +21,7 @@ public class WebSocketServer {
             prop.load(input);
             int port = Integer.parseInt(prop.getProperty("server.port"));
 
-            Server server = new Server("localhost", port, "/java", WebSocketServerEndpoint.class);
+            Server server = new Server("localhost", port, "", WebSocketServerEndpoint.class);
 
             server.start();
             logger.info("[SERVER]: Server is up and running on port " + port);

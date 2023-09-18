@@ -57,7 +57,8 @@ public class WebSocketClient {
             String port = prop.getProperty("server.port");
 
             uri = new URI(String.format("ws://localhost:%s/java/demoApp", port));
-            clientManager.connectToServer(WebSocketClient.class, uri);
+            //  I can use session to send messages
+            Session session = clientManager.connectToServer(WebSocketClient.class, uri);
             latch.await();
         } catch (URISyntaxException | DeploymentException | InterruptedException | IOException e) {
             e.printStackTrace();

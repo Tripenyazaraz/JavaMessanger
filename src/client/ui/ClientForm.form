@@ -7,12 +7,15 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="6aa40" class="javax.swing.JButton" binding="hewwoButton" default-binding="true">
+      <component id="f2d7f" class="javax.swing.JButton" binding="hewwoButton">
         <constraints/>
         <properties>
           <text value="hewwo"/>
         </properties>
       </component>
+      <vspacer id="ad52">
+        <constraints/>
+      </vspacer>
     </children>
   </grid>
 </form>
